@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">Choose a number between ( 1 ) and ( 20 )</p>
+      <button class="btn again">Again !</button>
+      <!-- <button class="btn rules">Rules</button> -->
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check !</button>
+      </section>
+      <section class="right">
+        <p class="message">Start Guessing ...🤭</p>
+        <p class="label-score">💯 Score : <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore : <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+
+    <button class="btn rules show-modal">Rules</button>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h2>Rules of the Game</h2>
+      <p>
+        <ul class="modal-message">
+          <li>
+            Under the question mark <span class="words-style"> (?) </span>there's a hidden number. Starting with score of <span class="words-style">(20)</span>, 
+            you will try to guess that hidden number by entering a number between <span class="words-style">1 & 20</span> . 
+            After each <span class="words-style"> Check </span> you will get a clue if your number is lower or higher than the hidden number.
+          </li>
+          <li>
+            After each wrong guess the score <span class="words-style">decreases by (1)</span> until you guess the right number.
+          </li>
+          <li>
+            The highscore will reflect the last score you get after all the wrong guesses.
+          </li>
+          <li>
+            If you wish to play again just click the<span class="words-style"> (Again) button </span> and it will reset everything but your highscore.
+          </li>
+        </ul>
+        <h3>Hope you like this game ... Have Fun 🎉</h3>
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
