@@ -7,6 +7,8 @@ By generating a random number that's hidden under the question mark (?) ,the use
 The user starts the game with **score of 20**, which decreases by 1 for every wrong guess from the user until he guess the right number.
 When the guess is right the background turns into winning green , the hidden number appears and the user gets a **highscore**, which reflects the score the user gets after all wrong guesses.
 
+If the user reaches the score of 0 , he looses the game.
+
 By clicking the **Again Button** the game reset everything except the highscore. After playing multiple rounds and reset the game using the Again button, the game saves the highest score the user gets.
 
 # Modal window 
